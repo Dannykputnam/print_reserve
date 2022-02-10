@@ -38,7 +38,7 @@ const AuthProvider = ({ children }) => {
     .catch( err => console.log(err))
   }
 
-  const updateUser = (ud, user) => {
+  const updateUser = (id, user) => {
     let data = new FormData()
     data.append('file', user.image)
     data.append('name', user.name)
